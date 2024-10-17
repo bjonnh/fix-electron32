@@ -1,6 +1,8 @@
-# Obsidian Sample Plugin
+# Obsidian Fix Electron 32 Plugin
 
-This is a sample plugin for Obsidian (https://obsidian.md).
+This is a really specific plugin for Obsidian (https://obsidian.md).
+
+If you don't know what it is, you don't need it.
 
 This project uses TypeScript to provide type checking and documentation.
 The repo depends on the latest plugin API (obsidian.d.ts) in TypeScript Definition format, which contains TSDoc comments describing what it does.
