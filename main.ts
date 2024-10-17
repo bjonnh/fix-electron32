@@ -1,4 +1,5 @@
 import { App, Editor, MarkdownView, Modal, Notice, Plugin, PluginSettingTab, Setting } from 'obsidian';
+const { webUtils } = require('electron');
 
 interface MyPluginSettings {
 	mySetting: string;
@@ -16,7 +17,7 @@ export default class MyPlugin extends Plugin {
 
 		Object.defineProperty(File.prototype, 'path', {
 			get: function() {
-				return electron.webUtils.getPathForFile(this);
+				return webUtils.getPathForFile(this);
 			},
 			configurable: true,
 			enumerable: false
